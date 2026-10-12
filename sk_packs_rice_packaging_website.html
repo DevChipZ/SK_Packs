@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SK packs | High-Tensile Rice Bags & Agro-Grain Packaging</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Agricultural & Heritage Typography: Playfair Display + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paddy: {
+              50: '#F2F8F5',
+              100: '#DDEFE6',
+              600: '#2D6A4F',
+              800: '#1B4332',
+              900: '#0F291E',
+            },
+            harvest: {
+              50: '#FDF8F0',
+              100: '#F8ECCF',
+              400: '#F59E0B',
+              500: '#D97706',
+              600: '#B45309',
+              700: '#92400E',
+            },
+            jute: {
+              base: '#FBF8F1',
+              card: '#F4ECE0',
+              border: '#E3D7C5',
+              dark: '#786650',
+            },
+            loam: '#1C1917',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #FBF8F1;
+      color: #1C1917;
+    }
+    
+    /* Subtle natural jute weave pattern */
+    .bg-jute-pattern {
+      background-color: #FBF8F1;
+      background-image: radial-gradient(#D97706 0.65px, transparent 0.65px), radial-gradient(#1B4332 0.65px, #FBF8F1 0.65px);
+      background-size: 26px 26px;
+      background-position: 0 0, 13px 13px;
+      background-opacity: 0.05;
+    }
+
+    .rice-texture-border {
+      border: 2px dashed #D2C0A5;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 9px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F4ECE0;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #B45309;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #1B4332;
+    }
+  </style>
+</head>
+<body class="selection:bg-harvest-500 selection:text-white min-h-screen flex flex-col justify-between bg-jute-pattern">
+
+  <!-- Top Announce Bar -->
+  <div class="bg-paddy-900 text-harvest-100 text-xs py-2 px-4 text-center font-medium border-b border-paddy-800">
+    <span class="inline-flex items-center gap-1.5">
+      <i data-lucide="sprout" class="w-3.5 h-3.5 text-harvest-400"></i>
+      Rice Millers & Grain Exporters Wholesale Supply &bull; Dispatching across India & Global Terminals
+    </span>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <header class="sticky top-0 z-50 bg-[#FBF8F1]/95 backdrop-blur-md border-b border-jute-border transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 h-20 flex items-center justify-between">
+      
+      <!-- LOGO SLOT -->
+      <a href="#home" class="flex items-center gap-3.5 group">
+        <!-- Logo Badge Slot (Can be easily swapped with an <img> tag) -->
+        <div id="brand-logo-slot" class="w-12 h-12 rounded-2xl bg-paddy-800 border-2 border-harvest-500 flex items-center justify-center text-harvest-400 shadow-sm group-hover:bg-paddy-900 transition-all">
+          <!-- Replace this SVG with: <img src="your-logo.png" alt="SK packs logo" class="w-full h-full object-contain p-1 rounded-xl"> -->
+          <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a9 9 0 0 1 9 9c0 4.97-4.03 9-9 9s-9-4.03-9-9a9 9 0 0 1 9-9z"></path>
+            <path d="M12 6c-1.5 2-2 4.5-2 6 0 1.5.5 3 2 4 1.5-1 2-2.5 2-4 0-1.5-.5-4-2-6z"></path>
+          </svg>
+        </div>
+
+        <div class="flex flex-col">
+          <div class="flex items-baseline gap-1.5">
+            <span class="font-serif text-2xl sm:text-3xl font-extrabold tracking-tight text-paddy-800 group-hover:text-paddy-600 transition-colors">
+              SK packs
+            </span>
+            <span class="text-xs font-bold text-harvest-600 uppercase tracking-widest font-sans">Packaging</span>
+          </div>
+          <span class="text-[11px] text-jute-dark font-medium -mt-0.5">Heavy-Duty Rice & Grain Sacks</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center space-x-8 text-sm font-semibold text-loam/80">
+        <a href="#home" class="hover:text-paddy-800 transition-colors py-1">Home</a>
+        <a href="#showcase" class="hover:text-paddy-800 transition-colors py-1">Showcase & Specs</a>
+        <a href="#calculator" class="hover:text-paddy-800 transition-colors py-1">Miller's Bag Calculator</a>
+        <a href="#lineup" class="hover:text-paddy-800 transition-colors py-1">Rice Bags Range</a>
+        <a href="#location" class="hover:text-paddy-800 transition-colors py-1">Mill Hub & Location</a>
+        <a href="#contact" class="hover:text-paddy-800 transition-colors py-1">Contact Us</a>
+      </nav>
+
+      <!-- Header CTAs -->
+      <div class="flex items-center gap-3">
+        <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-paddy-800 hover:bg-paddy-900 text-harvest-100 font-medium text-sm transition-all shadow-sm hover:shadow active:scale-95 border border-paddy-600">
+          <i data-lucide="file-text" class="w-4 h-4 text-harvest-400"></i>
+          <span>Request Mill Rates</span>
+        </a>
+        <button id="mobile-toggle" class="lg:hidden p-2.5 rounded-xl text-paddy-800 hover:bg-jute-card focus:outline-none" aria-label="Toggle menu">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Nav Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-jute-card border-b border-jute-border px-6 py-5 space-y-3 shadow-xl">
+      <a href="#home" class="block font-semibold text-loam py-1 mobile-link">Home</a>
+      <a href="#showcase" class="block font-semibold text-loam py-1 mobile-link">Bag Showcase & Details</a>
+      <a href="#calculator" class="block font-semibold text-loam py-1 mobile-link">Miller's Bag Calculator</a>
+      <a href="#lineup" class="block font-semibold text-loam py-1 mobile-link">Rice Bags Range</a>
+      <a href="#location" class="block font-semibold text-loam py-1 mobile-link">Factory Location & Hub</a>
+      <a href="#contact" class="block font-semibold text-loam py-1 mobile-link">Contact Us</a>
+      <div class="pt-2">
+        <a href="#contact" class="block text-center w-full py-3 rounded-xl bg-paddy-800 text-harvest-100 font-semibold text-sm mobile-link">
+          Get Bulk Mill Quote
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero / Landing Section -->
+  <section id="home" class="relative pt-10 pb-16 lg:pt-16 lg:pb-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+        
+        <!-- Left: Headline & Organic Rice Packaging Mission -->
+        <div class="lg:col-span-6 space-y-6">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-harvest-100 border border-harvest-500/40 text-harvest-700 text-xs font-bold tracking-wide uppercase">
+            <i data-lucide="check-circle" class="w-3.5 h-3.5 text-harvest-600"></i>
+            <span>100% Food-Grade &bull; Zero Burst Stacking &bull; Export Ready</span>
+          </div>
+
+          <div class="space-y-3">
+            <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-paddy-800 leading-[1.12]">
+              SK packs
+            </h1>
+            <p class="font-serif text-2xl sm:text-3xl text-harvest-600 italic font-semibold">
+              Engineered Grain Packaging & Heavy-Duty Rice Bags
+            </p>
+          </div>
+
+          <p class="text-base text-loam/80 leading-relaxed max-w-xl">
+            Custom manufactured specifically for modern rice mills, seed processors, and grain export terminals. We build reinforced woven sacks and traditional jute gunny bags that resist moisture, withstand 25-bag stack heights, and preserve grain aroma.
+          </p>
+
+          <!-- Interactive Highlights Pills -->
+          <div class="flex flex-wrap gap-2.5 pt-1">
+            <span class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-white border border-jute-border text-paddy-800 shadow-sm flex items-center gap-1.5">
+              <i data-lucide="package" class="w-3.5 h-3.5 text-harvest-500"></i> 10kg, 25kg, 50kg, 100kg
+            </span>
+            <span class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-white border border-jute-border text-paddy-800 shadow-sm flex items-center gap-1.5">
+              <i data-lucide="shield" class="w-3.5 h-3.5 text-harvest-500"></i> Anti-Slip Weave Pattern
+            </span>
+            <span class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-white border border-jute-border text-paddy-800 shadow-sm flex items-center gap-1.5">
+              <i data-lucide="droplets" class="w-3.5 h-3.5 text-harvest-500"></i> Moisture-Proof Liner
+            </span>
+          </div>
+
+          <!-- Hero Actions -->
+          <div class="pt-4 flex flex-wrap items-center gap-4">
+            <a href="#showcase" class="px-7 py-3.5 rounded-xl bg-paddy-800 hover:bg-paddy-900 text-harvest-50 font-bold text-sm transition-all shadow-md hover:shadow-lg flex items-center gap-2">
+              <span>Inspect Bag Showcase</span>
+              <i data-lucide="arrow-down" class="w-4 h-4 text-harvest-400"></i>
+            </a>
+            <a href="#calculator" class="px-6 py-3.5 rounded-xl bg-white hover:bg-jute-card border border-jute-border text-paddy-800 font-bold text-sm transition-all flex items-center gap-2">
+              <i data-lucide="calculator" class="w-4 h-4 text-harvest-600"></i>
+              <span>Miller's Calculator</span>
+            </a>
+          </div>
+
+          <!-- Quick Trust Numbers -->
+          <div class="pt-6 border-t border-jute-border grid grid-cols-3 gap-4">
+            <div>
+              <div class="font-serif text-2xl font-bold text-paddy-800">12+ Yrs</div>
+              <div class="text-xs text-jute-dark font-medium">Mill Supply Experience</div>
+            </div>
+            <div>
+              <div class="font-serif text-2xl font-bold text-paddy-800">500k+</div>
+              <div class="text-xs text-jute-dark font-medium">Bags Monthly Capacity</div>
+            </div>
+            <div>
+              <div class="font-serif text-2xl font-bold text-paddy-800">Zero</div>
+              <div class="text-xs text-jute-dark font-medium">Transit Burst History</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Dedicated Interactive Showcase Photo Slot & Details Card -->
+        <div id="showcase" class="lg:col-span-6">
+          <div class="bg-white border-2 border-jute-border rounded-3xl p-6 sm:p-7 shadow-xl relative">
+            
+            <!-- Showcase Header Bar -->
+            <div class="flex items-center justify-between pb-4 border-b border-jute-border mb-4">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-harvest-500 animate-pulse"></span>
+                <span class="text-xs font-bold uppercase tracking-wider text-paddy-800">SK Showcase Model Slot</span>
+              </div>
+              <span id="showcase-badge-grade" class="text-xs px-2.5 py-1 rounded bg-harvest-100 text-harvest-700 font-bold border border-harvest-400/50">
+                Grade: Export A+
+              </span>
+            </div>
+
+            <!-- Bag Type Switcher Buttons (Interactivity) -->
+            <div class="flex gap-1.5 p-1 bg-jute-card rounded-xl mb-4 overflow-x-auto text-xs font-bold">
+              <button onclick="switchBagModel('bopp')" id="btn-bag-bopp" class="px-3 py-1.5 rounded-lg bg-paddy-800 text-white shadow-sm transition-all whitespace-nowrap">
+                Basmati BOPP 25kg
+              </button>
+              <button onclick="switchBagModel('gunny')" id="btn-bag-gunny" class="px-3 py-1.5 rounded-lg text-loam hover:bg-white transition-all whitespace-nowrap">
+                Paddy Jute Gunny 50kg
+              </button>
+              <button onclick="switchBagModel('ponni')" id="btn-bag-ponni" class="px-3 py-1.5 rounded-lg text-loam hover:bg-white transition-all whitespace-nowrap">
+                Ponni PP Woven 26x40
+              </button>
+              <button onclick="switchBagModel('liner')" id="btn-bag-liner" class="px-3 py-1.5 rounded-lg text-loam hover:bg-white transition-all whitespace-nowrap">
+                Moisture-Shield 50kg
+              </button>
+            </div>
+
+            <!-- SHOWCASE PHOTO SLOT (Realistic Preview + Instant File Uploader) -->
+            <div class="relative w-full rounded-2xl bg-jute-base rice-texture-border p-6 flex flex-col items-center justify-center min-h-[300px] overflow-hidden group">
+              
+              <div id="showcase-photo-container" class="w-full flex flex-col items-center justify-center text-center">
+                <!-- Illustrated Realistic Rice Bag Visual -->
+                <div class="relative w-36 h-48 sm:w-44 sm:h-56 bg-harvest-100 border-2 border-harvest-600 rounded-xl shadow-lg flex flex-col justify-between p-3 transition-transform group-hover:scale-105 duration-300">
+                  <div class="flex items-center justify-between border-b border-harvest-400/60 pb-1">
+                    <span class="text-[9px] font-bold text-paddy-800 uppercase">SK packs</span>
+                    <i data-lucide="award" class="w-3.5 h-3.5 text-harvest-600"></i>
+                  </div>
+                  <div class="text-center my-auto">
+                    <div id="bag-visual-brand" class="font-serif text-xs font-bold text-paddy-800 leading-tight">ROYAL GRAIN</div>
+                    <div id="bag-visual-subtitle" class="text-[9px] text-harvest-700 font-semibold mt-0.5">Premium Aged Rice</div>
+                    <div class="w-10 h-0.5 bg-harvest-500 mx-auto my-1.5"></div>
+                    <span id="bag-visual-cap" class="text-[10px] font-bold px-2 py-0.5 rounded bg-paddy-800 text-harvest-100">25 KG NET</span>
+                  </div>
+                  <div class="flex items-center justify-between border-t border-harvest-400/60 pt-1 text-[8px] text-loam/70 font-medium">
+                    <span>Double Stitched</span>
+                    <span>Food Safe</span>
+                  </div>
+                </div>
+
+                <!-- Guidance for user photo placement -->
+                <p class="text-xs font-bold text-paddy-800 mt-4">[ SK Showcase Photo Slot ]</p>
+                <p class="text-[11px] text-jute-dark">Drop your rice bag photo below to preview on site instantly</p>
+              </div>
+
+              <!-- Interactive Photo File Input -->
+              <label class="mt-4 inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white border border-jute-border hover:bg-jute-card text-paddy-800 text-xs font-bold shadow-sm cursor-pointer transition-all active:scale-95">
+                <i data-lucide="image-plus" class="w-4 h-4 text-harvest-600"></i>
+                <span>Upload Your Bag Photo (Live Preview)</span>
+                <input type="file" id="bag-image-input" accept="image/*" class="hidden" onchange="handleBagPhotoUpload(event)">
+              </label>
+
+            </div>
+
+            <!-- Dynamic Product Details Section -->
+            <div class="mt-5 space-y-3">
+              <div class="flex items-baseline justify-between">
+                <div>
+                  <h3 id="showcase-title" class="font-serif text-xl font-bold text-paddy-800">
+                    BOPP Multi-Color Basmati Rice Pack
+                  </h3>
+                  <p id="showcase-desc" class="text-xs text-loam/70">
+                    High-sheen photo quality finish with gusseted handles for modern retail and supermarket displays.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Detailed Specifications Grid -->
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 border-t border-jute-border text-xs">
+                <div class="bg-jute-card p-2.5 rounded-xl border border-jute-border">
+                  <span class="text-[10px] font-bold text-jute-dark uppercase block">Capacity</span>
+                  <span id="spec-capacity" class="font-bold text-paddy-800 text-sm">25 kg / 50 kg</span>
+                </div>
+                <div class="bg-jute-card p-2.5 rounded-xl border border-jute-border">
+                  <span class="text-[10px] font-bold text-jute-dark uppercase block">GSM Fabric</span>
+                  <span id="spec-gsm" class="font-bold text-harvest-600 text-sm">115 GSM Woven</span>
+                </div>
+                <div class="bg-jute-card p-2.5 rounded-xl border border-jute-border">
+                  <span class="text-[10px] font-bold text-jute-dark uppercase block">Printing</span>
+                  <span id="spec-print" class="font-bold text-paddy-800 text-sm">8-Color BOPP</span>
+                </div>
+                <div class="bg-jute-card p-2.5 rounded-xl border border-jute-border">
+                  <span class="text-[10px] font-bold text-jute-dark uppercase block">Stitch Hem</span>
+                  <span id="spec-stitch" class="font-bold text-harvest-600 text-sm">EZ-Open Top</span>
+                </div>
+              </div>
+
+              <div class="pt-1 flex items-center justify-between text-xs text-loam/70">
+                <span class="flex items-center gap-1 text-paddy-600 font-semibold">
+                  <i data-lucide="check" class="w-3.5 h-3.5"></i> Custom Mill Brand Printing Available
+                </span>
+                <a href="#contact" class="font-bold text-harvest-600 hover:underline">Inquire This Model &rarr;</a>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Miller's Packaging & Dimension Calculator -->
+  <section id="calculator" class="w-full py-16 bg-jute-card border-y border-jute-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10 space-y-2">
+        <span class="text-xs font-bold uppercase tracking-wider text-harvest-700 bg-harvest-100 border border-harvest-400 px-3.5 py-1.5 rounded-full inline-block">
+          Miller's Tool
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-paddy-800 font-bold">
+          Interactive Bag Sizing & GSM Calculator
+        </h2>
+        <p class="text-sm text-loam/70">
+          Select your grain variety and packaging target to calculate the exact recommended bag dimensions, material weight, and safe stack height.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-10 border border-jute-border shadow-lg grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Controls Column -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <!-- Step 1: Grain Type -->
+          <div>
+            <label class="block text-xs font-bold text-paddy-800 uppercase tracking-wide mb-2">1. Select Rice / Grain Variety</label>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs font-semibold">
+              <button type="button" onclick="setCalcGrain('basmati', this)" class="calc-grain-btn active-grain p-3 rounded-xl border-2 border-paddy-800 bg-paddy-50 text-paddy-800 transition-all text-center">
+                Basmati (Long)
+              </button>
+              <button type="button" onclick="setCalcGrain('ponni', this)" class="calc-grain-btn p-3 rounded-xl border border-jute-border bg-white text-loam hover:border-paddy-800 transition-all text-center">
+                Ponni / Raw
+              </button>
+              <button type="button" onclick="setCalcGrain('sona', this)" class="calc-grain-btn p-3 rounded-xl border border-jute-border bg-white text-loam hover:border-paddy-800 transition-all text-center">
+                Sona Masoori
+              </button>
+              <button type="button" onclick="setCalcGrain('paddy', this)" class="calc-grain-btn p-3 rounded-xl border border-jute-border bg-white text-loam hover:border-paddy-800 transition-all text-center">
+                Paddy Grain (Husk)
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2: Desired Capacity -->
+          <div>
+            <label class="block text-xs font-bold text-paddy-800 uppercase tracking-wide mb-2">2. Desired Net Weight Capacity</label>
+            <div class="grid grid-cols-4 gap-2 text-xs font-bold">
+              <button type="button" onclick="setCalcWeight(10, this)" class="calc-weight-btn p-3 rounded-xl border border-jute-border bg-white text-loam hover:border-paddy-800 text-center">
+                10 KG
+              </button>
+              <button type="button" onclick="setCalcWeight(25, this)" class="calc-weight-btn active-weight p-3 rounded-xl border-2 border-paddy-800 bg-paddy-50 text-paddy-800 text-center">
+                25 KG
+              </button>
+              <button type="button" onclick="setCalcWeight(50, this)" class="calc-weight-btn p-3 rounded-xl border border-jute-border bg-white text-loam hover:border-paddy-800 text-center">
+                50 KG
+              </button>
+              <button type="button" onclick="setCalcWeight(100, this)" class="calc-weight-btn p-3 rounded-xl border border-jute-border bg-white text-loam hover:border-paddy-800 text-center">
+                100 KG (Jute)
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 3: Material Preference -->
+          <div>
+            <label class="block text-xs font-bold text-paddy-800 uppercase tracking-wide mb-2">3. Preferred Material Formulation</label>
+            <div class="grid grid-cols-3 gap-2 text-xs font-semibold">
+              <button type="button" onclick="setCalcMat('pp', this)" class="calc-mat-btn active-mat p-3 rounded-xl border-2 border-paddy-800 bg-paddy-50 text-paddy-800 text-center">
+                Circular PP Woven
+              </button>
+              <button type="button" onclick="setCalcMat('bopp', this)" class="calc-mat-btn p-3 rounded-xl border border-jute-border bg-white text-loam hover:border-paddy-800 text-center">
+                BOPP Multi-Layer
+              </button>
+              <button type="button" onclick="setCalcMat('jute', this)" class="calc-mat-btn p-3 rounded-xl border border-jute-border bg-white text-loam hover:border-paddy-800 text-center">
+                Natural Golden Jute
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Real-Time Output Calculation Card -->
+        <div class="lg:col-span-5 bg-paddy-800 text-harvest-50 rounded-2xl p-6 sm:p-7 border border-paddy-900 shadow-inner space-y-5">
+          <div class="flex items-center justify-between border-b border-paddy-600/60 pb-3">
+            <span class="text-xs uppercase font-bold text-harvest-400 tracking-wider">SK Engineering Output</span>
+            <span class="text-[11px] px-2 py-0.5 rounded bg-paddy-900 text-harvest-300 font-mono">SPEC-CALC</span>
+          </div>
+
+          <div class="space-y-4">
+            <div>
+              <span class="text-[11px] text-harvest-300 block">Calculated Bag Cut Size</span>
+              <div id="out-dimensions" class="font-serif text-2xl font-bold text-white mt-0.5">20.5" x 33" + 2" Bottom Gusset</div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 pt-2">
+              <div class="bg-paddy-900/80 p-3 rounded-xl border border-paddy-700">
+                <span class="text-[10px] text-harvest-400 font-bold uppercase block">Optimal Fabric GSM</span>
+                <div id="out-gsm" class="font-bold text-base text-white">92 - 98 GSM</div>
+              </div>
+              <div class="bg-paddy-900/80 p-3 rounded-xl border border-paddy-700">
+                <span class="text-[10px] text-harvest-400 font-bold uppercase block">Safe Stack Height</span>
+                <div id="out-stack" class="font-bold text-base text-harvest-300">Up to 24 Sacks</div>
+              </div>
+            </div>
+
+            <div class="bg-paddy-900/50 p-3.5 rounded-xl border border-paddy-700/60 text-xs space-y-1">
+              <div class="flex justify-between text-harvest-200">
+                <span>Grain Density Index:</span>
+                <span id="out-density" class="font-bold text-white">0.82 g/cm³</span>
+              </div>
+              <div class="flex justify-between text-harvest-200">
+                <span>Moisture Barrier Recommendation:</span>
+                <span id="out-liner" class="font-bold text-harvest-400">Standard Poly-Coating</span>
+              </div>
+            </div>
+          </div>
+
+          <button onclick="quoteFromCalculator()" class="w-full py-3.5 rounded-xl bg-harvest-500 hover:bg-harvest-400 text-paddy-900 font-bold text-xs uppercase tracking-wider transition-all shadow active:scale-95 flex items-center justify-center gap-2">
+            <span>Apply This Spec to Quote Request</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Product Lineup Section -->
+  <section id="lineup" class="w-full py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+    
+    <div class="text-center max-w-2xl mx-auto mb-14 space-y-3">
+      <span class="text-xs font-bold uppercase tracking-wider text-harvest-700 bg-harvest-100 border border-harvest-400 px-3.5 py-1.5 rounded-full inline-block">
+        Milling & Agro Range
+      </span>
+      <h2 class="font-serif text-3xl sm:text-4xl text-paddy-800 font-bold">
+        Complete Rice Mill Packaging Portfolio
+      </h2>
+      <p class="text-sm text-loam/70">
+        From farmgate raw paddy harvesting sacks to retail-ready photo-laminated basmati bags.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      <!-- Lineup Item 1 -->
+      <div class="bg-white rounded-2xl border border-jute-border p-6 shadow-sm hover:shadow-md hover:border-paddy-800 transition-all flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-paddy-50 border border-paddy-200 text-paddy-800 flex items-center justify-center mb-4">
+            <i data-lucide="sparkles" class="w-6 h-6 text-harvest-600"></i>
+          </div>
+          <span class="text-[10px] uppercase font-bold text-harvest-700 tracking-wider">Premium Retail</span>
+          <h3 class="font-serif text-lg font-bold text-paddy-800 mt-1 mb-2">BOPP Laminated Bags</h3>
+          <p class="text-xs text-loam/70 leading-relaxed mb-4">
+            High-gloss or matte reverse rotogravure printing with photographic sharpness. Perfect for 5kg, 10kg & 25kg branded basmati retail packs.
+          </p>
+        </div>
+        <div class="pt-3 border-t border-jute-border/60 text-xs font-bold flex justify-between text-paddy-800">
+          <span>Colors: Up to 8</span>
+          <span class="text-harvest-600">Gusseted / Handle</span>
+        </div>
+      </div>
+
+      <!-- Lineup Item 2 -->
+      <div class="bg-white rounded-2xl border border-jute-border p-6 shadow-sm hover:shadow-md hover:border-paddy-800 transition-all flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-paddy-50 border border-paddy-200 text-paddy-800 flex items-center justify-center mb-4">
+            <i data-lucide="layers" class="w-6 h-6 text-harvest-600"></i>
+          </div>
+          <span class="text-[10px] uppercase font-bold text-harvest-700 tracking-wider">Mill Standard 26x40</span>
+          <h3 class="font-serif text-lg font-bold text-paddy-800 mt-1 mb-2">PP Woven Rice Sacks</h3>
+          <p class="text-xs text-loam/70 leading-relaxed mb-4">
+            The backbone of commercial wholesale rice trade. 100% circular woven virgin polymers with non-slip yarn weave for ultra-stable forklift pallets.
+          </p>
+        </div>
+        <div class="pt-3 border-t border-jute-border/60 text-xs font-bold flex justify-between text-paddy-800">
+          <span>Capacity: 50–75 KG</span>
+          <span class="text-harvest-600">Flexo 3-Color Print</span>
+        </div>
+      </div>
+
+      <!-- Lineup Item 3 -->
+      <div class="bg-white rounded-2xl border border-jute-border p-6 shadow-sm hover:shadow-md hover:border-paddy-800 transition-all flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-paddy-50 border border-paddy-200 text-paddy-800 flex items-center justify-center mb-4">
+            <i data-lucide="leaf" class="w-6 h-6 text-harvest-600"></i>
+          </div>
+          <span class="text-[10px] uppercase font-bold text-harvest-700 tracking-wider">Farmgate & Silo</span>
+          <h3 class="font-serif text-lg font-bold text-paddy-800 mt-1 mb-2">Heavy Jute Gunny Bags</h3>
+          <p class="text-xs text-loam/70 leading-relaxed mb-4">
+            Traditional golden burlap sacks offering natural porosity and moisture equilibrium. Ideal for storing freshly harvested unhusked paddy grain.
+          </p>
+        </div>
+        <div class="pt-3 border-t border-jute-border/60 text-xs font-bold flex justify-between text-paddy-800">
+          <span>Capacity: 75–100 KG</span>
+          <span class="text-harvest-600">100% Biodegradable</span>
+        </div>
+      </div>
+
+      <!-- Lineup Item 4 -->
+      <div class="bg-white rounded-2xl border border-jute-border p-6 shadow-sm hover:shadow-md hover:border-paddy-800 transition-all flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-paddy-50 border border-paddy-200 text-paddy-800 flex items-center justify-center mb-4">
+            <i data-lucide="shield-check" class="w-6 h-6 text-harvest-600"></i>
+          </div>
+          <span class="text-[10px] uppercase font-bold text-harvest-700 tracking-wider">Sea Freight Export</span>
+          <h3 class="font-serif text-lg font-bold text-paddy-800 mt-1 mb-2">Moisture-Lined Grain Bags</h3>
+          <p class="text-xs text-loam/70 leading-relaxed mb-4">
+            Integrated LDPE inner food liner preventing sea-spray humidity, mold growth, and weevil contamination during multi-week ocean transit.
+          </p>
+        </div>
+        <div class="pt-3 border-t border-jute-border/60 text-xs font-bold flex justify-between text-paddy-800">
+          <span>LDPE Micron: 40-70µ</span>
+          <span class="text-harvest-600">Air-Tight Seal</span>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Factory Location & Rice Corridor Hub -->
+  <section id="location" class="w-full py-16 bg-jute-card border-t border-jute-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
+        
+        <!-- Logistics Hub Details -->
+        <div class="lg:col-span-5 flex flex-col justify-between space-y-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-harvest-700 bg-harvest-100 border border-harvest-400 px-3.5 py-1.5 rounded-full inline-block">
+              Manufacturing & Grain Logistics Hub
+            </span>
+            <h2 class="font-serif text-3xl sm:text-4xl text-paddy-800 font-bold mt-3 mb-2">
+              Factory Location & Mill Corridor
+            </h2>
+            <p class="text-sm text-loam/75 leading-relaxed">
+              Centrally based alongside the Red Hills / Tiruvallur paddy milling belt with direct arterial links to Chennai Port container freight stations (CFS).
+            </p>
+          </div>
+
+          <div class="space-y-3.5">
+            <!-- Facility Address Card -->
+            <div class="p-4 rounded-2xl bg-white border border-jute-border shadow-sm flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-paddy-800 text-harvest-400 flex items-center justify-center shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-paddy-800">SK packs Plant & Dispatch Terminal</h4>
+                <p class="text-xs text-loam/70 mt-1">Survey No. 142/3, Grand Northern Trunk Road, Near Red Hills Rice Mandi</p>
+                <p class="text-xs text-harvest-700 font-semibold mt-0.5">Chennai, Tamil Nadu 600052, India</p>
+              </div>
+            </div>
+
+            <!-- Loading Dock Operational Hours -->
+            <div class="p-4 rounded-2xl bg-white border border-jute-border shadow-sm flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-paddy-800 text-harvest-400 flex items-center justify-center shrink-0">
+                <i data-lucide="clock" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-paddy-800">Lorry & Trailer Dispatch Timings</h4>
+                <p class="text-xs text-loam/70 mt-1">Monday – Saturday: 07:30 AM – 09:00 PM</p>
+                <p class="text-xs text-emerald-700 font-bold mt-0.5">&bull; Open For Bulk Rice Mill Lorry Loading Today</p>
+              </div>
+            </div>
+
+            <!-- Freight Proximity -->
+            <div class="p-4 rounded-2xl bg-white border border-jute-border shadow-sm flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-paddy-800 text-harvest-400 flex items-center justify-center shrink-0">
+                <i data-lucide="truck" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-paddy-800">Grain Route Proximity</h4>
+                <p class="text-xs text-loam/70 mt-1">Direct NH-16 Access | 22 km to Chennai Port Harbor Gates</p>
+                <p class="text-xs text-jute-dark">Daily dispatch to Andhra, Karnataka & delta paddy districts.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-1">
+            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-bold text-paddy-800 hover:text-harvest-600 transition-colors">
+              <span>Open Directions in Google Maps</span>
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Visual Map & Radar Card -->
+        <div class="lg:col-span-7">
+          <div class="w-full h-full min-h-[420px] bg-paddy-900 border-2 border-paddy-800 rounded-3xl overflow-hidden shadow-xl flex flex-col text-white relative">
+            
+            <!-- Map Bar -->
+            <div class="bg-paddy-950/80 px-6 py-3.5 border-b border-paddy-800 flex items-center justify-between text-xs">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-harvest-400 animate-ping"></span>
+                <span class="font-bold text-harvest-200">Rice Belt Logistics Coordinate</span>
+              </div>
+              <span class="font-mono text-harvest-400 text-[11px]">13.1991° N, 80.1970° E (Red Hills Hub)</span>
+            </div>
+
+            <!-- Visual Simulated Agro Corridor Map -->
+            <div class="flex-1 relative flex items-center justify-center p-6 bg-[#133023] overflow-hidden">
+              <svg class="absolute inset-0 w-full h-full opacity-30" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <pattern id="grain-grid" width="36" height="36" patternUnits="userSpaceOnUse">
+                    <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#2D6A4F" stroke-width="1" />
+                  </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grain-grid)" />
+                <path d="M -40 220 Q 200 90 460 210 T 900 160" fill="none" stroke="#D97706" stroke-width="10" opacity="0.6"/>
+                <path d="M 220 -30 L 290 450" fill="none" stroke="#E3D7C5" stroke-width="6" opacity="0.4" />
+                <circle cx="260" cy="180" r="60" fill="#2D6A4F" opacity="0.3" />
+              </svg>
+
+              <!-- Central Map Station Card -->
+              <div class="relative z-10 bg-paddy-900/90 backdrop-blur-md p-6 rounded-2xl border-2 border-harvest-500 max-w-sm text-center shadow-2xl space-y-3">
+                <div class="w-12 h-12 mx-auto rounded-xl bg-harvest-500 text-paddy-900 flex items-center justify-center font-serif font-bold text-xl shadow">
+                  SK
+                </div>
+                <div>
+                  <h5 class="font-serif font-bold text-lg text-white">SK packs Central Factory</h5>
+                  <p class="text-xs text-harvest-200 mt-0.5">High-Speed Looms & Printing Line</p>
+                </div>
+                <div class="pt-1 flex flex-wrap justify-center gap-2">
+                  <span class="text-[10px] px-2.5 py-1 bg-paddy-800 text-harvest-300 rounded-md font-bold">Bay A: 50kg Rice Sacks</span>
+                  <span class="text-[10px] px-2.5 py-1 bg-paddy-800 text-harvest-300 rounded-md font-bold">Bay B: Export Containers</span>
+                </div>
+              </div>
+
+              <!-- Distance badge -->
+              <div class="absolute bottom-4 left-4 bg-paddy-950/80 backdrop-blur-md px-3.5 py-2 rounded-xl border border-paddy-700 text-xs text-harvest-200 flex items-center gap-2">
+                <i data-lucide="navigation" class="w-4 h-4 text-harvest-400"></i>
+                <span>Direct NH16 to Andhra & Delta Mills</span>
+              </div>
+            </div>
+
+            <!-- Footer status -->
+            <div class="bg-paddy-950/90 px-6 py-3 border-t border-paddy-800 flex items-center justify-between text-xs text-harvest-200/80">
+              <span>Daily Delivery Trucks to Tiruvallur, Thanjavur & Nellore</span>
+              <span class="font-bold text-harvest-400">Loading Bay Status: Ready</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Us / Mill Direct RFQ Form -->
+  <section id="contact" class="w-full py-20 bg-white border-t border-jute-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Left: Sales Desk & Direct Reach -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-xs font-bold uppercase tracking-wider text-harvest-700 bg-harvest-100 border border-harvest-400 px-3.5 py-1.5 rounded-full inline-block">
+            Direct Mill Desk
+          </span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-paddy-800 font-bold leading-tight">
+            Order Samples or Request Mill Factory Rates
+          </h2>
+          <p class="text-sm text-loam/75 leading-relaxed">
+            Need customized 25kg or 50kg rice bags with your brand print? Get factory-direct bulk rate cards and sample fabric swatches delivered to your mill office.
+          </p>
+
+          <div class="space-y-3.5 pt-2">
+            
+            <a href="tel:+919840012345" class="flex items-center gap-4 p-4 rounded-2xl bg-jute-base border border-jute-border hover:border-paddy-800 transition-all group">
+              <div class="w-11 h-11 rounded-xl bg-paddy-800 text-harvest-400 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                <i data-lucide="phone-call" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-[11px] font-bold text-jute-dark uppercase">Mill Orders Hotline</div>
+                <div class="text-sm font-bold text-paddy-800">+91 98400 12345 / 044-2655 8900</div>
+              </div>
+            </a>
+
+            <a href="https://wa.me/919840012345" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 rounded-2xl bg-emerald-50 border border-emerald-200 hover:border-emerald-600 transition-all group">
+              <div class="w-11 h-11 rounded-xl bg-emerald-700 text-white flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-[11px] font-bold text-emerald-800 uppercase">WhatsApp Instant Bag Sizing</div>
+                <div class="text-sm font-bold text-emerald-950">Chat Directly with Packaging Engineer</div>
+              </div>
+            </a>
+
+            <div class="flex items-center gap-4 p-4 rounded-2xl bg-jute-base border border-jute-border">
+              <div class="w-11 h-11 rounded-xl bg-paddy-800 text-harvest-400 flex items-center justify-center shrink-0">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-[11px] font-bold text-jute-dark uppercase">Official Procurement Email</div>
+                <div class="text-sm font-bold text-paddy-800">sales@skpacks.in &bull; dispatch@skpacks.in</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: Inquiry Form with Instant Summary -->
+        <div class="lg:col-span-7">
+          <div class="bg-jute-card border border-jute-border p-6 sm:p-9 rounded-3xl shadow-md">
+            <h3 class="font-serif text-2xl font-bold text-paddy-800 mb-1">Request Formal Mill Quotation</h3>
+            <p class="text-xs text-loam/70 mb-6">Tell us your bag requirements to receive estimated pricing and delivery lead time.</p>
+
+            <form id="rfq-form" class="space-y-4">
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-paddy-800 mb-1.5" for="mill-name">Rice Mill / Business Name *</label>
+                  <input type="text" id="mill-name" required placeholder="e.g. Sri Balaji Modern Rice Mill" class="w-full px-4 py-3 rounded-xl border border-jute-border bg-white focus:outline-none focus:ring-2 focus:ring-paddy-800 text-sm">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-paddy-800 mb-1.5" for="contact-person">Contact Person Name *</label>
+                  <input type="text" id="contact-person" required placeholder="e.g. S. Kumar (Proprietor)" class="w-full px-4 py-3 rounded-xl border border-jute-border bg-white focus:outline-none focus:ring-2 focus:ring-paddy-800 text-sm">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-paddy-800 mb-1.5" for="contact-phone">Phone / WhatsApp *</label>
+                  <input type="tel" id="contact-phone" required placeholder="+91 98400 00000" class="w-full px-4 py-3 rounded-xl border border-jute-border bg-white focus:outline-none focus:ring-2 focus:ring-paddy-800 text-sm">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-paddy-800 mb-1.5" for="selected-category">Bag Category *</label>
+                  <select id="selected-category" class="w-full px-4 py-3 rounded-xl border border-jute-border bg-white focus:outline-none focus:ring-2 focus:ring-paddy-800 text-sm font-medium">
+                    <option value="BOPP 25kg Basmati Pack">BOPP 25kg Basmati Retail Pack</option>
+                    <option value="PP Woven 50kg Sacks (26x40)">PP Woven 50kg Commercial Sacks (26x40)</option>
+                    <option value="Heavy Jute Gunny Bags">Heavy Jute Gunny Bags (Raw Paddy 75kg)</option>
+                    <option value="Moisture Lined Export Sacks">Moisture Lined Sea-Freight Export Sacks</option>
+                    <option value="Custom Size / Calculation">Custom Specification from Calculator</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-paddy-800 mb-1.5" for="order-quantity">Quantity Needed (Units) *</label>
+                  <input type="text" id="order-quantity" required placeholder="e.g. 5,000 Bags" class="w-full px-4 py-3 rounded-xl border border-jute-border bg-white focus:outline-none focus:ring-2 focus:ring-paddy-800 text-sm">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-paddy-800 mb-1.5" for="destination">Delivery City / Mill Mandi *</label>
+                  <input type="text" id="destination" required placeholder="e.g. Red Hills / Nellore / Madurai" class="w-full px-4 py-3 rounded-xl border border-jute-border bg-white focus:outline-none focus:ring-2 focus:ring-paddy-800 text-sm">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-paddy-800 mb-1.5" for="print-notes">Printing & Custom Branding Notes</label>
+                <textarea id="print-notes" rows="3" placeholder="Mention number of colors (e.g. 2-color flexo or full-color BOPP), handle requirements, or inner liner preference..." class="w-full px-4 py-3 rounded-xl border border-jute-border bg-white focus:outline-none focus:ring-2 focus:ring-paddy-800 text-sm"></textarea>
+              </div>
+
+              <!-- Interactive Feedback Notice Box -->
+              <div id="form-feedback" class="hidden p-4 rounded-xl text-xs font-bold"></div>
+
+              <button type="submit" id="submit-rfq-btn" class="w-full py-4 rounded-xl bg-paddy-800 hover:bg-paddy-900 text-harvest-100 font-bold text-sm transition-all shadow-md active:scale-[0.99] flex items-center justify-center gap-2">
+                <span>Submit Quotation Request</span>
+                <i data-lucide="send" class="w-4 h-4 text-harvest-400"></i>
+              </button>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Earth-Toned Natural Footer -->
+  <footer class="w-full bg-paddy-900 text-harvest-100 border-t border-paddy-800 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <!-- Footer Logo -->
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-harvest-500 text-paddy-950 font-serif font-bold text-sm flex items-center justify-center shadow">
+          SK
+        </div>
+        <div>
+          <span class="font-serif text-lg font-bold text-white tracking-wide">SK packs</span>
+          <span class="text-xs text-harvest-300 block">Heavy-Duty Rice Bags & Woven Sacks &bull; Chennai</span>
+        </div>
+      </div>
+
+      <!-- Links -->
+      <div class="flex flex-wrap items-center gap-6 text-xs font-semibold text-harvest-200">
+        <a href="#home" class="hover:text-white transition-colors">Home</a>
+        <a href="#showcase" class="hover:text-white transition-colors">Showcase & Specs</a>
+        <a href="#calculator" class="hover:text-white transition-colors">Miller's Calculator</a>
+        <a href="#lineup" class="hover:text-white transition-colors">Lineup</a>
+        <a href="#location" class="hover:text-white transition-colors">Location</a>
+        <a href="#contact" class="hover:text-white transition-colors">Contact Us</a>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-xs text-harvest-400/80">
+        &copy; 2026 SK packs. Trusted packaging partner to rice millers.
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Mobile Navigation Toggle
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    mobileToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // 1. Interactive Bag Showcase Model Switcher
+    const bagModels = {
+      bopp: {
+        title: "BOPP Multi-Color Basmati Rice Pack",
+        desc: "High-sheen photo-grade finish with gusseted handles for modern retail and supermarket displays.",
+        badge: "Grade: Export A+",
+        visualTitle: "ROYAL BASMATI",
+        visualSubtitle: "1121 Extra Long Aged Grain",
+        visualCap: "25 KG NET",
+        capacity: "25 kg / 50 kg",
+        gsm: "115 GSM Woven",
+        print: "8-Color BOPP",
+        stitch: "EZ-Open Top"
+      },
+      gunny: {
+        title: "Heavy Jute Gunny Sacks (Paddy Silo Run)",
+        desc: "Breathable organic golden jute fibers preserving grain temperature and preventing internal dampness.",
+        badge: "Grade: Standard A-Twill",
+        visualTitle: "HARVEST JUTE",
+        visualSubtitle: "Field Paddy & Seed Sacks",
+        visualCap: "75 KG NET",
+        capacity: "75 kg / 100 kg",
+        gsm: "380 GSM Jute",
+        print: "Flexo Green/Red",
+        stitch: "Double Lock Hem"
+      },
+      ponni: {
+        title: "Commercial PP Woven Rice Sack (26x40)",
+        desc: "The standard workhorse for South Indian rice mills (Ponni, Sona Masoori, IR20) with anti-slip yarns.",
+        badge: "Grade: Heavy Commercial",
+        visualTitle: "SUPER PONNI",
+        visualSubtitle: "Deluxe Boiled Rice",
+        visualCap: "50 KG NET",
+        capacity: "50 kg Standard",
+        gsm: "95 GSM Poly",
+        print: "3-Color Flexo",
+        stitch: "Chain Stitch"
+      },
+      liner: {
+        title: "Moisture-Shield Export Rice Sacks",
+        desc: "Equipped with co-extruded LDPE inner liner ensuring hermetic humidity resistance for container shipping.",
+        badge: "Grade: Sea Container Spec",
+        visualTitle: "OCEAN SHIELD",
+        visualSubtitle: "Moisture & Damp Guard",
+        visualCap: "50 KG NET",
+        capacity: "25 kg / 50 kg",
+        gsm: "110 + 40µ Liner",
+        print: "4-Color Water-Resist",
+        stitch: "Hermetic Heat Seal"
+      }
+    };
+
+    function switchBagModel(key) {
+      const data = bagModels[key];
+      if (!data) return;
+
+      // Update Details
+      document.getElementById('showcase-title').textContent = data.title;
+      document.getElementById('showcase-desc').textContent = data.desc;
+      document.getElementById('showcase-badge-grade').textContent = data.badge;
+
+      // Update Visual
+      const brandEl = document.getElementById('bag-visual-brand');
+      const subEl = document.getElementById('bag-visual-subtitle');
+      const capEl = document.getElementById('bag-visual-cap');
+      if (brandEl) brandEl.textContent = data.visualTitle;
+      if (subEl) subEl.textContent = data.visualSubtitle;
+      if (capEl) capEl.textContent = data.visualCap;
+
+      // Update Specs Grid
+      document.getElementById('spec-capacity').textContent = data.capacity;
+      document.getElementById('spec-gsm').textContent = data.gsm;
+      document.getElementById('spec-print').textContent = data.print;
+      document.getElementById('spec-stitch').textContent = data.stitch;
+
+      // Update button states
+      const buttons = ['bopp', 'gunny', 'ponni', 'liner'];
+      buttons.forEach(b => {
+        const btn = document.getElementById(`btn-bag-${b}`);
+        if (b === key) {
+          btn.className = "px-3 py-1.5 rounded-lg bg-paddy-800 text-white shadow-sm transition-all whitespace-nowrap";
+        } else {
+          btn.className = "px-3 py-1.5 rounded-lg text-loam hover:bg-white transition-all whitespace-nowrap";
+        }
+      });
+    }
+
+    // 2. Showcase Photo Upload (Instant live preview)
+    function handleBagPhotoUpload(event) {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          const container = document.getElementById('showcase-photo-container');
+          container.innerHTML = `
+            <div class="relative w-full max-h-72 overflow-hidden rounded-xl border border-jute-border flex items-center justify-center bg-white shadow-md">
+              <img src="${e.target.result}" alt="Uploaded Bag Sample" class="object-contain max-h-64 w-full" />
+            </div>
+            <p class="text-xs font-bold text-paddy-800 mt-3">[ Your Bag Photo Loaded ]</p>
+            <p class="text-[11px] text-harvest-600 font-semibold">Ready for production inspection review</p>
+          `;
+        };
+        reader.readAsDataURL(file);
+      }
+    }
+
+    // 3. Interactive Miller's Sizing & GSM Calculator Logic
+    let calcState = {
+      grain: 'basmati',
+      weight: 25,
+      mat: 'pp'
+    };
+
+    const grainDensity = {
+      basmati: { name: "Basmati (Long Grain)", density: "0.82 g/cm³" },
+      ponni: { name: "Ponni / Raw Rice", density: "0.86 g/cm³" },
+      sona: { name: "Sona Masoori", density: "0.85 g/cm³" },
+      paddy: { name: "Raw Paddy (Unhusked)", density: "0.58 g/cm³" }
+    };
+
+    function recalculate() {
+      const g = calcState.grain;
+      const w = calcState.weight;
+      const m = calcState.mat;
+
+      let dim = '20.5" x 33"';
+      let gsm = '90 - 95 GSM';
+      let stack = 'Up to 24 Sacks';
+      let liner = 'Standard Poly Weave';
+
+      // Dimensions based on grain bulkiness and weight
+      if (w === 10) {
+        dim = g === 'paddy' ? '16" x 26"' : '14" x 23" + Bottom Gusset';
+        gsm = m === 'jute' ? '280 GSM' : '75 - 80 GSM';
+        stack = 'Up to 30 Sacks';
+      } else if (w === 25) {
+        dim = g === 'paddy' ? '22" x 36"' : '20" x 33"';
+        gsm = m === 'jute' ? '320 GSM' : (m === 'bopp' ? '110 GSM' : '90 - 95 GSM');
+        stack = 'Up to 24 Sacks';
+      } else if (w === 50) {
+        dim = g === 'paddy' ? '28" x 46"' : '26" x 40" (Mill Classic)';
+        gsm = m === 'jute' ? '380 GSM' : (m === 'bopp' ? '125 GSM' : '100 - 108 GSM');
+        stack = 'Up to 20 Sacks';
+      } else if (w === 100) {
+        dim = '29" x 50" (Heavy Jute Spec)';
+        gsm = '420 - 460 GSM Heavy Twill';
+        stack = 'Up to 14 Sacks';
+      }
+
+      if (m === 'bopp') {
+        liner = 'Co-extruded Gloss/Matte BOPP Film';
+      } else if (m === 'jute') {
+        liner = 'Natural Porous Burlap (Organic Aeration)';
+      }
+
+      document.getElementById('out-dimensions').textContent = dim;
+      document.getElementById('out-gsm').textContent = gsm;
+      document.getElementById('out-stack').textContent = stack;
+      document.getElementById('out-density').textContent = grainDensity[g].density;
+      document.getElementById('out-liner').textContent = liner;
+    }
+
+    function setCalcGrain(grain, btn) {
+      calcState.grain = grain;
+      document.querySelectorAll('.calc-grain-btn').forEach(b => {
+        b.className = "calc-grain-btn p-3 rounded-xl border border-jute-border bg-white text-loam hover:border-paddy-800 transition-all text-center";
+      });
+      btn.className = "calc-grain-btn p-3 rounded-xl border-2 border-paddy-800 bg-paddy-50 text-paddy-800 transition-all text-center";
+      recalculate();
+    }
+
+    function setCalcWeight(weight, btn) {
+      calcState.weight = weight;
+      document.querySelectorAll('.calc-weight-btn').forEach(b => {
+        b.className = "calc-weight-btn p-3 rounded-xl border border-jute-border bg-white text-loam hover:border-paddy-800 text-center";
+      });
+      btn.className = "calc-weight-btn p-3 rounded-xl border-2 border-paddy-800 bg-paddy-50 text-paddy-800 text-center";
+      recalculate();
+    }
+
+    function setCalcMat(mat, btn) {
+      calcState.mat = mat;
+      document.querySelectorAll('.calc-mat-btn').forEach(b => {
+        b.className = "calc-mat-btn p-3 rounded-xl border border-jute-border bg-white text-loam hover:border-paddy-800 text-center";
+      });
+      btn.className = "calc-mat-btn p-3 rounded-xl border-2 border-paddy-800 bg-paddy-50 text-paddy-800 text-center";
+      recalculate();
+    }
+
+    function quoteFromCalculator() {
+      const categorySelect = document.getElementById('selected-category');
+      const notes = document.getElementById('print-notes');
+      
+      const dim = document.getElementById('out-dimensions').textContent;
+      const gsm = document.getElementById('out-gsm').textContent;
+      
+      categorySelect.value = "Custom Size / Calculation";
+      notes.value = `[Calculator Specification]: ${calcState.weight}kg ${grainDensity[calcState.grain].name} | Dimensions: ${dim} | Material: ${calcState.mat.toUpperCase()} (${gsm})`;
+      
+      window.location.hash = '#contact';
+      notes.focus();
+    }
+
+    // 4. Contact & RFQ Form Submission
+    const rfqForm = document.getElementById('rfq-form');
+    const formFeedback = document.getElementById('form-feedback');
+    const submitBtn = document.getElementById('submit-rfq-btn');
+
+    rfqForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const mill = document.getElementById('mill-name').value;
+      const qty = document.getElementById('order-quantity').value;
+      const cat = document.getElementById('selected-category').value;
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = `
+        <span class="inline-block animate-spin mr-2">&#9696;</span>
+        Generating Factory Quote...
+      `;
+
+      setTimeout(() => {
+        formFeedback.className = "p-4 rounded-xl text-xs font-semibold bg-emerald-100 text-emerald-900 border border-emerald-300 block";
+        formFeedback.innerHTML = `
+          <strong>Quotation Logged:</strong> Thank you, <em>${mill}</em>. Your inquiry for <strong>${qty}</strong> units of <strong>${cat}</strong> has been assigned to our plant dispatch desk. A pricing sheet is being generated for your destination.
+        `;
+
+        rfqForm.reset();
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = `
+          <span>Submit Quotation Request</span>
+          <i data-lucide="send" class="w-4 h-4 text-harvest-400"></i>
+        `;
+        lucide.createIcons();
+      }, 700);
+    });
+  </script>
+</body>
+</html>
